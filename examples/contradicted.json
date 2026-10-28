@@ -1,0 +1,13 @@
+{
+  "claim": "The 48-hour battery endurance result for Lumen hardware revision A applies outdoors.",
+  "facets": [
+    "The 48-hour battery endurance result for Lumen hardware revision A applies outdoors."
+  ],
+  "sources": [
+    {
+      "url": "https://raw.githubusercontent.com/haris4587/ClaimProofSeal/5fe675fa9887570ee3b39245ff8f4f9a3847d5d5/fixtures/field-addendum.txt",
+      "sha256": "e8037231ff52cc96cabdaa5a3ba669d06631f39172de22dd12fb2793f7ec2157",
+      "bytes": 411
+    }
+  ]
+}

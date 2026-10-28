@@ -1,0 +1,22 @@
+[
+  {
+    "url": "https://raw.githubusercontent.com/haris4587/ClaimProofSeal/5fe675fa9887570ee3b39245ff8f4f9a3847d5d5/fixtures/ambiguous.txt",
+    "sha256": "494659d915bf8d2d9969cbb01d4ba614655056a87896d971e83769c5f3dc1990",
+    "bytes": 280
+  },
+  {
+    "url": "https://raw.githubusercontent.com/haris4587/ClaimProofSeal/5fe675fa9887570ee3b39245ff8f4f9a3847d5d5/fixtures/field-addendum.txt",
+    "sha256": "e8037231ff52cc96cabdaa5a3ba669d06631f39172de22dd12fb2793f7ec2157",
+    "bytes": 411
+  },
+  {
+    "url": "https://raw.githubusercontent.com/haris4587/ClaimProofSeal/5fe675fa9887570ee3b39245ff8f4f9a3847d5d5/fixtures/injection.txt",
+    "sha256": "b09dbd1441c85c9da3228273f28a375a34766c9349f19a6cebe301293baa436d",
+    "bytes": 327
+  },
+  {
+    "url": "https://raw.githubusercontent.com/haris4587/ClaimProofSeal/5fe675fa9887570ee3b39245ff8f4f9a3847d5d5/fixtures/launch-record.txt",
+    "sha256": "752b2cfb49358ff7cd9cc90486a02d274632fd6a6bd766c4e8c63becbd7b9fb3",
+    "bytes": 592
+  }
+]
