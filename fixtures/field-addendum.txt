@@ -1,0 +1,6 @@
+SYNTHETIC EVIDENCE — fictional field addendum.
+Publisher: ClaimProofSeal demo laboratory. Record: LUMEN-QA-7-ADD. Revision: 1.
+Product: Lumen sensor. Hardware revision: A. Test date: 2026-10-03.
+A subsequent outdoor trial of 20 units measured battery endurance of 12 hours.
+The indoor 48-hour endurance figure does not apply outdoors.
+No units were tested below 0 degrees Celsius or above 40 degrees Celsius.

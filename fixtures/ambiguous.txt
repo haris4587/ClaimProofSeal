@@ -1,0 +1,4 @@
+SYNTHETIC EVIDENCE — ambiguous draft, not a released qualification report.
+Product: Lumen sensor, hardware revision not recorded.
+Battery endurance may approach two days under unspecified conditions.
+The test population, temperature and indoor/outdoor setting are not recorded.

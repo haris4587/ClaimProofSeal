@@ -1,0 +1,8 @@
+SYNTHETIC EVIDENCE — fictional product qualification record.
+Publisher: ClaimProofSeal demo laboratory. Record: LUMEN-QA-7. Revision: 1.
+Product: Lumen sensor. Hardware revision: A. Test date: 2026-10-01.
+The tested operating range was 0 to 40 degrees Celsius.
+At 20 degrees Celsius, all 100 test units met the stated accuracy threshold.
+Battery endurance was 48 hours in the laboratory's indoor test configuration.
+No outdoor endurance trials were performed. No certification for outdoor use was granted.
+This record supports only hardware revision A and the stated laboratory conditions.
