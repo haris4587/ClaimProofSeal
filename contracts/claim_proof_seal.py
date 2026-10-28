@@ -20,7 +20,10 @@ TASK = """Return exactly {"coverage":"VERIFIED" or "UNKNOWN","reason":"...",
 "rows":[{"facet":0,"source":0,"state":"SUPPORT|PARTIAL|REFUTE|ABSENT|UNKNOWN",
 "reason":"...","lines":[0]}]}. coverage VERIFIED only if the ordered facets jointly
 preserve EVERY factual assertion and qualifier of the exact claim without adding or
-weakening anything. Otherwise UNKNOWN. Supply one row for EACH facet/source pair,
+weakening anything. Coverage is ONLY claim-to-facets semantic equivalence, independent
+of whether the claim is true, evidence supports it, or documents are synthetic. A single
+facet identical to the claim has VERIFIED coverage even when REFUTED. Otherwise UNKNOWN.
+Supply one row for EACH facet/source pair,
 ordered facet first then source. SUPPORT means the ENTIRE facet is directly entailed;
 PARTIAL means some but not all is established; REFUTE requires an explicit incompatible
 fact; ABSENT means readable evidence says nothing relevant; UNKNOWN means ambiguous.
@@ -165,7 +168,8 @@ def assess(p: dict, docs: list) -> dict:
     for attempt in range(2):
         try:
             return normalize(gl.nondet.exec_prompt(prompt, response_format="json"), p, docs)
-        except Exception:
+        except Exception as exc:
+            print("ClaimProofSeal invalid audit", str(exc)[:120])
             # One bounded full retry; never feed model-generated instructions back as control.
             pass
     return failure("INVALID_MODEL")
@@ -184,10 +188,15 @@ def validate_leader(proposed, p: dict, docs: list, independent: dict) -> bool:
         require(type(proposed) is dict and set(proposed) == {"coverage", "reason", "rows", "outcome", "citations"}, "Leader fields")
         a = normalize({k: proposed[k] for k in ["coverage", "reason", "rows"]}, p, docs)
         if a != proposed or critical(a) != critical(independent):
+            print("ClaimProofSeal critical mismatch", canonical(critical(a)), canonical(critical(independent)))
             return False
         judge = decode(gl.nondet.exec_prompt(GUARD + "Validate both audits against ALL documents and the exact claim. Reject omitted qualifiers, unsupported coverage, irrelevant citations, misleading quotations, invented facts or material disagreements. Every selected line must ground its classification in context. Reasons may differ in wording and choose different valid lines. Return exactly {\"valid\": true} only if both audits and all citations are substantively valid; otherwise {\"valid\": false}.\nDATA_JSON:\n" + canonical({"claim": p["claim"], "facets": p["facets"], "documents": indexed_docs(docs), "leader": proposed, "independent": independent}), response_format="json"), 100)
-        return type(judge) is dict and set(judge) == {"valid"} and judge["valid"] is True
-    except Exception:
+        valid = type(judge) is dict and set(judge) == {"valid"} and judge["valid"] is True
+        if not valid:
+            print("ClaimProofSeal citation judgment rejected", canonical(judge)[:100])
+        return valid
+    except Exception as exc:
+        print("ClaimProofSeal invalid leader", str(exc)[:120])
         return False
 
 
