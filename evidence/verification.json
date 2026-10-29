@@ -1,0 +1,9 @@
+{
+  "verified": true,
+  "request_id": "c405c61e9c6b429787065f9d619d5b66458277cd38b37d46bf928082e580a9c1",
+  "outcome": "CONTRADICTED",
+  "decision_hash": "e3cf107521d8469d9d3ccd85cda1e2d8cfcc83b6aba6bc90c615c73174bfbf9a",
+  "source_sha256": "a52d1148e85d840d5beaf39aad508029d63b9628a707718f055e5c51a290b270",
+  "source_matches_deployed": true,
+  "github_source_checked": true
+}

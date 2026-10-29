@@ -1,0 +1,119 @@
+- main:
+  - link:
+    - /url: /
+  - button "GenLayer Studio":
+    - generic: GenLayer Studio
+  - button "0x64...dFFc 0 GEN":
+    - text: 0x64...dFFc
+    - generic: 0 GEN
+  - button:
+  - button:
+  - button:
+  - navigation:
+    - link:
+      - /url: /contracts
+    - link:
+      - /url: /run-debug
+    - link:
+      - /url: /validators
+    - link:
+      - /url: https://docs.genlayer.com/
+    - link:
+      - /url: https://discord.gg/8Jm4v89VAu
+    - link:
+      - /url: https://docs.google.com/forms/d/1IVNsZwm936kSNCiXmlAP8bgJnbik7Bqaoc3I6UYhr-o/viewform
+    - link:
+      - /url: /settings
+  - heading "Run and Debug" [level=3]
+  - generic: Execution Mode
+  - combobox "Execution Mode":
+    - option "Normal (Full Consensus)" [selected]
+    - option "Leader Only (Fast, No Validation)"
+  - heading "Contract claim_proof_seal.py" [level=4]:
+    - text: Contract
+    - generic: claim_proof_seal.py
+  - text: Deployed at
+  - generic: 0xcD...b908
+  - button:
+  - link:
+    - /url: https://explorer-studio.genlayer.com/address/0xcD1E22b8B459b9A9d63A962538b7b332f420b908
+  - button:
+  - button "Deploy new instance":
+    - generic: Deploy new instance
+  - button "Upgrade code":
+    - generic: Upgrade code
+  - heading "Read Methods" [level=4]:
+    - generic: Read Methods
+  - generic: "State:"
+  - combobox:
+    - option "Accepted"
+    - option "Finalized" [selected]
+  - button "get_config":
+    - generic: get_config
+  - button "get_decision":
+    - generic: get_decision
+  - generic: request_id
+  - textbox "request_id":
+    - /placeholder: string
+    - text: c405c61e9c6b429787065f9d619d5b66458277cd38b37d46bf928082e580a9c1
+  - generic: attempt
+  - spinbutton "attempt": "1"
+  - button "Call Contract":
+    - generic: Call Contract
+  - generic: "Response (Finalized):"
+  - generic: "\"{\\\"decision\\\":{\\\"attempt\\\":1,\\\"domain\\\":\\\"ClaimProofSeal/1/decision\\\",\\\"package_hash\\\":\\\"9d9bb51c431a34e7317d072d7f1e806eea89f65516f226eb27c89d6e70dd1de5\\\",\\\"previous\\\":\\\"\\\",\\\"request_id\\\":\\\"c405c61e9c6b429787065f9d619d5b66458277cd38b37d46bf928082e580a9c1\\\",\\\"result\\\":{\\\"citations\\\":[[\\\"A subsequent outdoor trial of 20 units measured battery endurance of 12 hours.\\\",\\\"The indoor 48-hour endurance figure does not apply outdoors.\\\"]],\\\"coverage\\\":\\\"VERIFIED\\\",\\\"outcome\\\":\\\"CONTRADICTED\\\",\\\"reason\\\":\\\"The single facet is identical to the claim, so coverage is VERIFIED by claim-to-facets equivalence only, regardless of document support. The document explicitly states the 48-hour indoor figure does not apply outdoors.\\\",\\\"rows\\\":[{\\\"facet\\\":0,\\\"lines\\\":[3,4],\\\"reason\\\":\\\"The document explicitly says the 48-hour endurance figure does not apply outdoors, which is incompatible with the facet's assertion that it applies outdoors.\\\",\\\"source\\\":0,\\\"state\\\":\\\"REFUTE\\\"}]}},\\\"decision_hash\\\":\\\"e3cf107521d8469d9d3ccd85cda1e2d8cfcc83b6aba6bc90c615c73174bfbf9a\\\"}\""
+  - button "get_request":
+    - generic: get_request
+  - generic: request_id
+  - textbox "request_id":
+    - /placeholder: string
+    - text: c405c61e9c6b429787065f9d619d5b66458277cd38b37d46bf928082e580a9c1
+  - button "Call Contract":
+    - generic: Call Contract
+  - generic: "Response (Finalized):"
+  - generic: "\"{\\\"attempts\\\":1,\\\"binding\\\":{\\\"chain_id\\\":61999,\\\"contract\\\":\\\"0xcD1E22b8B459b9A9d63A962538b7b332f420b908\\\",\\\"domain\\\":\\\"ClaimProofSeal/1\\\",\\\"owner\\\":\\\"0x647C6E2B4C62edFc774613d8B53d5f32e67edFFc\\\",\\\"package\\\":{\\\"claim\\\":\\\"The 48-hour battery endurance result for Lumen hardware revision A applies outdoors.\\\",\\\"facets\\\":[\\\"The 48-hour battery endurance result for Lumen hardware revision A applies outdoors.\\\"],\\\"sources\\\":[{\\\"bytes\\\":411,\\\"sha256\\\":\\\"e8037231ff52cc96cabdaa5a3ba669d06631f39172de22dd12fb2793f7ec2157\\\",\\\"url\\\":\\\"https://raw.githubusercontent.com/haris4587/ClaimProofSeal/5fe675fa9887570ee3b39245ff8f4f9a3847d5d5/fixtures/field-addendum.txt\\\"}]},\\\"publisher\\\":\\\"haris4587/ClaimProofSeal\\\"},\\\"head\\\":\\\"e3cf107521d8469d9d3ccd85cda1e2d8cfcc83b6aba6bc90c615c73174bfbf9a\\\",\\\"package_hash\\\":\\\"9d9bb51c431a34e7317d072d7f1e806eea89f65516f226eb27c89d6e70dd1de5\\\",\\\"status\\\":\\\"CONTRADICTED\\\"}\""
+  - heading "Write Methods" [level=4]:
+    - generic: Write Methods
+  - checkbox "Simulation Mode"
+  - generic: Simulation Mode
+  - button "evaluate":
+    - generic: evaluate
+  - generic: request_id
+  - textbox "request_id":
+    - /placeholder: string
+    - text: c405c61e9c6b429787065f9d619d5b66458277cd38b37d46bf928082e580a9c1
+  - button "Send Transaction":
+    - generic: Send Transaction
+  - button "register":
+    - generic: register
+  - generic: package_json
+  - textbox "package_json":
+    - /placeholder: string
+    - text: "{\"claim\":\"The 48-hour battery endurance result for Lumen hardware revision A applies outdoors.\",\"facets\":[\"The 48-hour battery endurance result for Lumen hardware revision A applies outdoors.\"],\"sources\":[{\"url\":\"https://raw.githubusercontent.com/haris4587/ClaimProofSeal/5fe675fa9887570ee3b39245ff8f4f9a3847d5d5/fixtures/field-addendum.txt\",\"sha256\":\"e8037231ff52cc96cabdaa5a3ba669d06631f39172de22dd12fb2793f7ec2157\",\"bytes\":411}]}"
+  - button "Send Transaction":
+    - generic: Send Transaction
+  - heading "Transactions" [level=4]
+  - button:
+  - generic: "0x2f96"
+  - generic: ...
+  - generic: evaluate
+  - generic: FINALIZED
+  - generic: "0xf718"
+  - generic: ...
+  - generic: register
+  - generic: FINALIZED
+  - generic: "0xb563"
+  - generic: ...
+  - generic: Deploy
+  - generic: FINALIZED
+  - navigation:
+    - button:
+    - button "storage.py":
+      - text: storage.py
+    - button:
+    - button "claim_proof_seal.py":
+      - text: claim_proof_seal.py
+    - button:
+    - button "claim_proof_seal.py":
+      - text: claim_proof_seal.py
+    - button:

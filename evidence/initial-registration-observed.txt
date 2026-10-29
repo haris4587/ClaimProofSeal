@@ -1,0 +1,125 @@
+- navigation:
+  - link "GenLayer Logo GenLayer Studio Explorer":
+    - /url: /
+    - img "GenLayer Logo"
+    - generic: GenLayer Studio Explorer
+  - link "Dashboard":
+    - /url: /
+    - generic: Dashboard
+  - link "Transactions":
+    - /url: /txs
+    - generic: Transactions
+  - link "Validators":
+    - /url: /validators
+    - generic: Validators
+  - link "Contracts":
+    - /url: /contracts
+    - generic: Contracts
+  - link "Providers":
+    - /url: /providers
+    - generic: Providers
+  - button "Search... Ctrl+K":
+    - generic: Search...
+    - generic: Ctrl+K
+  - button "Toggle theme":
+    - generic: Toggle theme
+- generic: "Transactions: 1,097,999"
+- generic: "Validators: 20"
+- generic: "Contracts: 194,400"
+- generic: Connected
+- main:
+  - link "Back to transactions":
+    - /url: /txs
+    - text: Back to transactions
+  - heading "Transaction Details" [level=1]
+  - code: "0xd62ebbef8780f78d51e48b76898dfaeff61a7158c29f4d32b646dbb6593ed78c"
+  - button "Copy to clipboard":
+  - generic: FINALIZED
+  - generic: Call
+  - tablist:
+    - tab "Overview" [selected]:
+      - text: Overview
+    - tab "Monitoring":
+      - text: Monitoring
+    - tab "Consensus":
+      - text: Consensus
+    - tab "Data":
+      - text: Data
+    - tab "Related (0)":
+      - text: Related (0)
+  - tabpanel "Overview":
+    - generic: Hash
+    - generic: "0xd62ebbef8780f78d51e48b76898dfaeff61a7158c29f4d32b646dbb6593ed78c"
+    - button "Copy to clipboard":
+    - generic: Status
+    - generic: FINALIZED
+    - generic: Type
+    - generic: Call
+    - generic: From
+    - link "0x647C6E2B4C62edFc774613d8B53d5f32e67edFFc":
+      - /url: /address/0x647C6E2B4C62edFc774613d8B53d5f32e67edFFc
+    - button "Copy to clipboard":
+    - generic: To
+    - link "0xe334547fC224fdBFC231fc2b67799F4b99f28A78":
+      - /url: /address/0xe334547fC224fdBFC231fc2b67799F4b99f28A78
+    - button "Copy to clipboard":
+    - generic: Value
+    - generic: 0 GEN
+    - generic: Nonce
+    - generic: "3"
+    - generic: Gas Limit
+    - generic: "-"
+    - generic: Created At
+    - generic: Oct 28, 2026, 7:51:49 PM
+    - generic: Execution Mode
+    - generic: Normal
+    - generic: Rotation Count
+    - generic: "0"
+    - generic: Initial Validators
+    - generic: "5"
+    - generic: Consensus Result
+    - generic: Accepted
+    - heading "Input Data" [level=4]
+    - button "decoded"
+    - button "hex"
+    - button "raw"
+    - button "Export JSON":
+      - text: Export JSON
+    - button "Copy":
+      - text: Copy
+    - generic: Method
+    - code: register
+    - generic: Parameters
+    - table:
+      - rowgroup:
+        - row "# Value":
+          - columnheader "#"
+          - columnheader "Value"
+      - rowgroup:
+        - 'row "0 {\"claim\":\"The 48-hour battery endurance result for Lumen hardware revision A applies outdoors.\",\"facets\":[\"The 48-hour battery endurance result for Lumen hardware revision A applies outdoors.\"],\"sources\":[{\"url\":\"https://raw.githubusercontent.com/haris4587/ClaimProofSeal/5fe675fa9887570ee3b39245ff8f4f9a3847d5d5/fixtures/field-addendum.txt\",\"sha256\":\"e8037231ff52cc96cabdaa5a3ba669d06631f39172de22dd12fb2793f7ec2157\",\"bytes\":411}]}"':
+          - cell "0"
+          - 'cell "{\"claim\":\"The 48-hour battery endurance result for Lumen hardware revision A applies outdoors.\",\"facets\":[\"The 48-hour battery endurance result for Lumen hardware revision A applies outdoors.\"],\"sources\":[{\"url\":\"https://raw.githubusercontent.com/haris4587/ClaimProofSeal/5fe675fa9887570ee3b39245ff8f4f9a3847d5d5/fixtures/field-addendum.txt\",\"sha256\":\"e8037231ff52cc96cabdaa5a3ba669d06631f39172de22dd12fb2793f7ec2157\",\"bytes\":411}]}"'
+    - heading "GenVM Execution" [level=4]
+    - generic: Execution Result
+    - generic: SUCCESS
+    - generic: Result Code
+    - generic: Return
+    - generic: Return Value
+    - code: "\"d6dd5432efd65ee1d3fc6a7f3af50abac354caed596da8932f5d388bc523f1fa\""
+    - generic: Stdout
+    - generic: (empty)
+    - generic: Stderr
+    - generic: (empty)
+    - img "Pending — reached":
+    - generic: Pending
+    - img "Proposing — reached":
+    - generic: Proposing
+    - img "Committing — reached":
+    - generic: Committing
+    - img "Revealing — reached":
+    - generic: Revealing
+    - img "Accepted — reached":
+    - generic: Accepted
+    - button "Finalized — Oct 28, 2026, 7:52:25 PM"
+    - generic: Finalized
+- alert

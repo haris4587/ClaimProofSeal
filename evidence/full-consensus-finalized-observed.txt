@@ -1,0 +1,129 @@
+- navigation:
+  - link "GenLayer Logo GenLayer Studio Explorer":
+    - /url: /
+    - img "GenLayer Logo"
+    - generic: GenLayer Studio Explorer
+  - link "Dashboard":
+    - /url: /
+    - generic: Dashboard
+  - link "Transactions":
+    - /url: /txs
+    - generic: Transactions
+  - link "Validators":
+    - /url: /validators
+    - generic: Validators
+  - link "Contracts":
+    - /url: /contracts
+    - generic: Contracts
+  - link "Providers":
+    - /url: /providers
+    - generic: Providers
+  - button "Search... Ctrl+K":
+    - generic: Search...
+    - generic: Ctrl+K
+  - button "Toggle theme":
+    - generic: Toggle theme
+- generic: "Transactions: 1,098,078"
+- generic: "Validators: 20"
+- generic: "Contracts: 194,412"
+- generic: Connected
+- main:
+  - link "Back to transactions":
+    - /url: /txs
+    - text: Back to transactions
+  - heading "Transaction Details" [level=1]
+  - code: "0x2f964d996fa85e092203615315bf3409bf1a36595fe0fbcceedc55d5c04d91b9"
+  - button "Copy to clipboard":
+  - generic: FINALIZED
+  - generic: Call
+  - tablist:
+    - tab "Overview" [selected]:
+      - text: Overview
+    - tab "Monitoring":
+      - text: Monitoring
+    - tab "Consensus":
+      - text: Consensus
+    - tab "Data":
+      - text: Data
+    - tab "Related (0)":
+      - text: Related (0)
+  - tabpanel "Overview":
+    - generic: Hash
+    - generic: "0x2f964d996fa85e092203615315bf3409bf1a36595fe0fbcceedc55d5c04d91b9"
+    - button "Copy to clipboard":
+    - generic: Status
+    - generic: FINALIZED
+    - generic: Type
+    - generic: Call
+    - generic: From
+    - link "0x647C6E2B4C62edFc774613d8B53d5f32e67edFFc":
+      - /url: /address/0x647C6E2B4C62edFc774613d8B53d5f32e67edFFc
+    - button "Copy to clipboard":
+    - generic: To
+    - link "0xcD1E22b8B459b9A9d63A962538b7b332f420b908":
+      - /url: /address/0xcD1E22b8B459b9A9d63A962538b7b332f420b908
+    - button "Copy to clipboard":
+    - generic: Value
+    - generic: 0 GEN
+    - generic: Nonce
+    - generic: "9"
+    - generic: Gas Limit
+    - generic: "-"
+    - generic: Created At
+    - generic: Oct 28, 2026, 8:01:08 PM
+    - generic: Execution Mode
+    - generic: Normal
+    - generic: Rotation Count
+    - generic: "0"
+    - generic: Initial Validators
+    - generic: "5"
+    - generic: Consensus Result
+    - generic: Accepted
+    - heading "Input Data" [level=4]
+    - button "decoded"
+    - button "hex"
+    - button "raw"
+    - button "Export JSON":
+      - text: Export JSON
+    - button "Copy":
+      - text: Copy
+    - generic: Method
+    - code: evaluate
+    - generic: Parameters
+    - table:
+      - rowgroup:
+        - row "# Value":
+          - columnheader "#"
+          - columnheader "Value"
+      - rowgroup:
+        - row "0 c405c61e9c6b429787065f9d619d5b66458277cd38b37d46bf928082e580a9c1":
+          - cell "0"
+          - cell "c405c61e9c6b429787065f9d619d5b66458277cd38b37d46bf928082e580a9c1"
+    - heading "GenVM Execution" [level=4]
+    - generic: Execution Result
+    - generic: SUCCESS
+    - generic: Result Code
+    - generic: Return
+    - generic: Return Value
+    - code: "\"e3cf107521d8469d9d3ccd85cda1e2d8cfcc83b6aba6bc90c615c73174bfbf9a\""
+    - generic: Stdout
+    - generic: (empty)
+    - generic: Stderr
+    - generic: (empty)
+    - heading "Equivalence Principle Outputs" [level=4]
+    - generic: "0"
+    - generic: Return
+    - code: "{\"citations\":[[\"A subsequent outdoor trial of 20 units measured battery endurance of 12 hours.\",\"The indoor 48-hour endurance figure does not apply outdoors.\",],]\"coverage\":\"VERIFIED\"\"outcome\":\"CONTRADICTED\"\"reason\":\"The single facet is identical to the claim, so coverage is VERIFIED by claim-to-facets equivalence only, regardless of document support. The document explicitly states the 48-hour indoor figure does not apply outdoors.\"\"rows\":[{\"facet\":0\"lines\":[3,4,]\"reason\":\"The document explicitly says the 48-hour endurance figure does not apply outdoors, which is incompatible with the facet's assertion that it applies outdoors.\"\"source\":0\"state\":\"REFUTE\"},]}"
+    - img "Pending — reached":
+    - generic: Pending
+    - img "Proposing — reached":
+    - generic: Proposing
+    - img "Committing — reached":
+    - generic: Committing
+    - img "Revealing — reached":
+    - generic: Revealing
+    - img "Accepted — reached":
+    - generic: Accepted
+    - button "Finalized — Oct 28, 2026, 8:02:08 PM"
+    - generic: Finalized
+- alert

@@ -1,0 +1,33 @@
+{
+  "decision": {
+    "attempt": 1,
+    "domain": "ClaimProofSeal/1/decision",
+    "package_hash": "9d9bb51c431a34e7317d072d7f1e806eea89f65516f226eb27c89d6e70dd1de5",
+    "previous": "",
+    "request_id": "c405c61e9c6b429787065f9d619d5b66458277cd38b37d46bf928082e580a9c1",
+    "result": {
+      "citations": [
+        [
+          "A subsequent outdoor trial of 20 units measured battery endurance of 12 hours.",
+          "The indoor 48-hour endurance figure does not apply outdoors."
+        ]
+      ],
+      "coverage": "VERIFIED",
+      "outcome": "CONTRADICTED",
+      "reason": "The single facet is identical to the claim, so coverage is VERIFIED by claim-to-facets equivalence only, regardless of document support. The document explicitly states the 48-hour indoor figure does not apply outdoors.",
+      "rows": [
+        {
+          "facet": 0,
+          "lines": [
+            3,
+            4
+          ],
+          "reason": "The document explicitly says the 48-hour endurance figure does not apply outdoors, which is incompatible with the facet's assertion that it applies outdoors.",
+          "source": 0,
+          "state": "REFUTE"
+        }
+      ]
+    }
+  },
+  "decision_hash": "e3cf107521d8469d9d3ccd85cda1e2d8cfcc83b6aba6bc90c615c73174bfbf9a"
+}

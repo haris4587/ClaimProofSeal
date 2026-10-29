@@ -1,0 +1,10 @@
+{
+  "tests": 58,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "sdk_runner": "v0.2.16",
+  "genlayer_test": "0.29.2",
+  "exit_code": 0,
+  "mode": "Actual pinned SDK direct mode, mocked web/LLM, captured validators explicitly executed"
+}

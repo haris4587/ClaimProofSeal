@@ -1,0 +1,26 @@
+{
+  "attempts": 1,
+  "binding": {
+    "chain_id": 61999,
+    "contract": "0xcD1E22b8B459b9A9d63A962538b7b332f420b908",
+    "domain": "ClaimProofSeal/1",
+    "owner": "0x647C6E2B4C62edFc774613d8B53d5f32e67edFFc",
+    "package": {
+      "claim": "The 48-hour battery endurance result for Lumen hardware revision A applies outdoors.",
+      "facets": [
+        "The 48-hour battery endurance result for Lumen hardware revision A applies outdoors."
+      ],
+      "sources": [
+        {
+          "bytes": 411,
+          "sha256": "e8037231ff52cc96cabdaa5a3ba669d06631f39172de22dd12fb2793f7ec2157",
+          "url": "https://raw.githubusercontent.com/haris4587/ClaimProofSeal/5fe675fa9887570ee3b39245ff8f4f9a3847d5d5/fixtures/field-addendum.txt"
+        }
+      ]
+    },
+    "publisher": "haris4587/ClaimProofSeal"
+  },
+  "head": "e3cf107521d8469d9d3ccd85cda1e2d8cfcc83b6aba6bc90c615c73174bfbf9a",
+  "package_hash": "9d9bb51c431a34e7317d072d7f1e806eea89f65516f226eb27c89d6e70dd1de5",
+  "status": "CONTRADICTED"
+}

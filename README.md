@@ -14,6 +14,8 @@ ClaimProofSeal locks an exact claim, an exhaustive ordered decomposition into fa
 
 Contradiction cannot be outvoted by supporting documents. PARTIALLY_SUPPORTED is a **non-certifying gap report**, never a positive seal for the complete claim. Only SUPPORTED certifies documentary entailment, within the locked evidence universe. Ambiguity conservatively dominates even an observed contradiction.
 
+Verified live: [Full Consensus](https://explorer-studio.genlayer.com/tx/0x2f964d996fa85e092203615315bf3409bf1a36595fe0fbcceedc55d5c04d91b9) finalized **CONTRADICTED** with zero rotations. **58 tests**, GenVM lint/SDK validation and schema extraction pass. Deployed bytes match GitHub. [Submission package](docs/SUBMISSION.md).
+
 ## Interface
 
 Deploy `contracts/claim_proof_seal.py` with the immutable publication repository `haris4587/ClaimProofSeal`, or a repository your application trusts.

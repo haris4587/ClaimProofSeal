@@ -1,0 +1,29 @@
+{
+  "network": "GenLayer Studio sandbox",
+  "chain_id": 61999,
+  "date": "2026-10-28",
+  "contract": "0xcD1E22b8B459b9A9d63A962538b7b332f420b908",
+  "studio_account": "0x647C6E2B4C62edFc774613d8B53d5f32e67edFFc",
+  "deployment_tx": "0xb563fe1f1ae7374cc39ab46ae1d1dbc0222380ad50b2e74ca0f7a1d399817330",
+  "registration_tx": "0xf7186c2538da8aecfe98458e57b74cc6169176af952831e863a5dcb9effb63fa",
+  "consensus_tx": "0x2f964d996fa85e092203615315bf3409bf1a36595fe0fbcceedc55d5c04d91b9",
+  "request_id": "c405c61e9c6b429787065f9d619d5b66458277cd38b37d46bf928082e580a9c1",
+  "decision_hash": "e3cf107521d8469d9d3ccd85cda1e2d8cfcc83b6aba6bc90c615c73174bfbf9a",
+  "source_commit": "25a2185b8e3d4746895566296b19ad76afdeb993",
+  "source_sha256": "a52d1148e85d840d5beaf39aad508029d63b9628a707718f055e5c51a290b270",
+  "execution_mode": "Normal (Full Consensus)",
+  "status": "FINALIZED",
+  "execution_result": "SUCCESS",
+  "consensus_result": "Accepted",
+  "outcome": "CONTRADICTED",
+  "rotations": 0,
+  "displayed_votes": {
+    "agree": 3,
+    "disagree": 2
+  },
+  "initial_validators": 5,
+  "sdk_runner": "v0.2.16",
+  "offline_tests": 58,
+  "initial_failed_contract": "0xe334547fC224fdBFC231fc2b67799F4b99f28A78",
+  "initial_undetermined_tx": "0xfc03a4a8b4992288f25d2ec72a1572bc8516761f18bf429ab412f48fe26596b3"
+}
